@@ -10,14 +10,35 @@
     display: flex
     justify-content: space-between
     &__link
+      
       color: #485168
       font-family: Roboto
       font-size: 14px
       font-weight: 700
       line-height: 22px
+      letter-spacing: 0;
+      transition: 0.3s
       &:hover
+        letter-spacing: 0.5px;
         color: #3e7ef1
         transition: 0.3s
+      &::before
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border-bottom: 2px solid #3e7ef1;
+        transition: 0.3s;
+        transform: scaleX(0);
+      &:hover
+        &::before
+          transform: scale(1);
+    &__item
+      position: relative;
+      
+
 
 .contacts-nav
   display: flex
@@ -41,9 +62,12 @@
   font-weight: 700
   line-height: 22px
   padding: 10px 30px
+  transition: 0.3s;
   &:hover
     background: linear-gradient(-21deg, #3e7ef1 30%, #2acfd0 60%);
-    cursor: pointer
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.3s;
 
     
     
