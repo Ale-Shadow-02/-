@@ -313,6 +313,16 @@ input::placeholder {
   font-size: 14px;
   font-weight: 700;
   line-height: 22px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.servises__btn:hover {
+  background: linear-gradient(-21deg, #3e7ef1 30%, #2acfd0 60%);
+  color: #ffffff;
+  cursor: pointer;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
 }
 
 .slide__item {
@@ -320,10 +330,14 @@ input::placeholder {
   text-align: center;
   max-width: 260px;
   margin-right: 45px;
-  -webkit-box-shadow: 20px 0 28px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 20px 0 28px 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 10px 38px rgba(18, 31, 54, 0.07);
+          box-shadow: 0 10px 38px rgba(18, 31, 54, 0.07);
   border: 1px solid rgba(0, 0, 0, 0.06);
   background-color: #ffffff;
+}
+
+.slide__item::last-child(1) {
+  margin-right: 0;
 }
 
 .slide__item_img {
@@ -378,6 +392,75 @@ input::placeholder {
 .slick-current::before {
   content: '';
   opacity: 0;
+}
+
+.about {
+  padding-top: 120px;
+  padding-bottom: 135px;
+}
+
+.about-title {
+  margin-bottom: 100px;
+}
+
+.about-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.block__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  margin-bottom: 60px;
+}
+
+.block__item_circle {
+  background-image: url(../images/img-about/about-circle-bg.jpg);
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 25px;
+  width: 59px;
+  height: 59px;
+}
+
+.block__item_img {
+  max-height: 28px;
+}
+
+.block__item_title {
+  color: #242424;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19px;
+  margin-bottom: 15px;
+}
+
+.block__item__subtitle {
+  color: #242424;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
 }
 
 .section-title {
