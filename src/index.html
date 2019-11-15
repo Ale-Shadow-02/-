@@ -11,6 +11,7 @@
   <title>Финнланд</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/slick.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
 </head>
 
@@ -46,7 +47,7 @@
       </div>
     </div>
   </header>
-  <section class="headers">
+  <section class="section headers">
     <div class="container">
       <div class="headers_wrap">
         <div class="headers_block">
@@ -90,7 +91,60 @@
       </form>
     </div>
   </section>
+  <section class="section servises">
+    <div class="container">
+      <h2 class="section-title servises__title">Наши услуги</h2>
+      <span class="servises__subtitle">Репутация важнее денег. Над ней не властны ни инфляции, ни кризисы.</span>
+      <div class="slider-servises">
+          <div class="slide__item">
+            <img class="slide__item_img" src="images/img-servises/slide-1.png" alt="img-1">
+            <span class="slide__item_title">Лечение зубов</span>
+          </div>
+          <div class="slide__item">
+            <img class="slide__item_img" src="images/img-servises/slide-2.png" alt="img-2">
+            <span class="slide__item_title">Детский прием</span>
+            </div>
+          <div class="slide__item">
+            <img class="slide__item_img" src="images/img-servises/slide-3.png" alt="img-3">
+            <span class="slide__item_title">Протезирование</span>
+          </div>
+          <div class="slide__item">
+            <img class="slide__item_img" src="images/img-servises/slide-4.png" alt="img-4">
+            <span class="slide__item_title">Ортодонтия</span>
+          </div>
+          <div class="slide__item">
+            <img class="slide__item_img" src="images/img-servises/slide-1.png" alt="img-1">
+            <span class="slide__item_title">Лечение зубов</span>
+          </div>
+          <div class="slide__item">
+            <img class="slide__item_img" src="images/img-servises/slide-2.png" alt="img-2">
+            <span class="slide__item_title">Детский прием</span>
+          </div>
+      </div>
+      <div class="slide__item_circle">
+        <img src="images/img-servises/arrow.png" alt="arrow">
+      </div>
+      <button class="servises__btn">Все услуги</button>
+    </div>
+  </section>
 
+  
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="js/slick.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+    $('.slider-servises').slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      nextArrow: $('.slide__item_circle'),
+      prevArrow: false,
+      autoplay: true,
+      autoplaySpeed: 2000
+
+    });
+    });
+  </script>
 </body>
 
 </html>
