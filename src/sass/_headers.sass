@@ -51,20 +51,60 @@
       bottom: -245px;
       left: 85px;
       z-index: -1
+  &-form
+    box-shadow: 0 10px 38px rgba(62, 126, 241, 0.22)
+    border-radius: 62px
+    background-color: #2acfd0
+    background: linear-gradient(-21deg, #3e7ef1 0%, #2acfd0 100%)
+    &_wrap
+      display: flex
+      justify-content: space-between
+      align-items: center
+      padding: 35px 45px
       
 
 .figure
   &_block
     margin-bottom: 30px
-
 .form
-  &_one
-    height: 124px
-    box-shadow: 0 10px 38px rgba(62, 126, 241, 0.22)
-    border-radius: 62px
-    background-color: #2acfd0
-    background: linear-gradient(-21deg, #3e7ef1 0%, #2acfd0 100%)
-  &_wrap
+  &__block
     display: flex
-    justify-content: space-between
     align-items: center
+    &_img
+      max-width: 28px
+      margin-right: 20px
+  &__input
+      background: transparent;
+      border-bottom: 2px solid #fff; 
+      outline: none   
+      border-left: none;
+      border-top: none;
+      border-right: none;
+      color: #ffffff
+      font-family: Roboto
+      font-size: 14px
+      font-weight: 700
+      line-height: 24px
+  &-btn
+    color: #3e7ef1
+    font-family: Roboto
+    font-size: 14px
+    font-weight: 700
+    line-height: 22px
+    border: 2px solid transparent
+    padding: 12px 20px
+    border-radius: 25px
+    background-color: #ffffff
+    transition: 0.3s
+    &:hover
+      /*background: #2cc7d3*///I
+      background: linear-gradient(-21deg, #3e7ef1 30%, #2acfd0 60%);
+      color: #ffffff
+      cursor: pointer;
+      border: 2px solid #ffffff
+      transform: scale(1.05);
+      
+input
+  &::placeholder
+    color: #ffffff
+
