@@ -262,6 +262,54 @@
           </div>
         </div>
       </div>
+      <div class="arrow-left">
+      </div>
+      <div class="arrow-right">
+      </div>
+    </div>
+  </section>
+  <section class="section contacts">
+    <div class="container">
+      <div class="contacts-wrap">
+        <div class="contacts__block">
+          <h2 class="section-title contacts__block_title">Остались вопросы?</h2>
+          <span class="contacts__block_subtitle">Заполните форму и наши сотрудники свяжутфся с вами в ближайшее
+            время
+            и ответят на все интересующие вас вопросы</span>
+          <form action="#" class="form contacts__form">
+            <input class="contacts__form_input" type="text" name="username" placeholder="Анастасия" required>
+            <input class="contacts__form_input" type="tel" name="userphone" placeholder="8 (999) 123 45 58" required>
+            <textarea class="contacts__form_textarea" name="usertext" cols="30" rows="10" placeholder="Ваш вопрос..."></textarea>
+            <button class="button contacts__form_button" type="submit">Отправить вопрос</button>
+          </form>
+        </div>
+        <div class="contacts__block">
+          <div class="map">
+            <script type="text/javascript" charset="utf-8" async
+              src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac3e5ff2ee6efdbe027e4bce79832812817acf5e8e626d941c8eb0f40c52b88b9&amp;width=100%25&amp;height=480&amp;lang=ru_RU&amp;scroll=false">
+            </script>
+          </div>
+          <span class="map__descr">К нам очень легко добраться. Вы можете связаться с нами по укзанным контактам или же заполнить форму и наши сотрудники проконсультируют вас по всем вопросам</span>
+          <h2 class="section-title map__title">Контактная информация</h2>
+          <div class="map__contacts">
+            <div class="map__contacts_block">
+              <h3 class="map__contacts_block_title">Номера телефонов:</h3>
+              <span class="map__contacts_block_info">+7 (390) 254 63 25</span>
+              <span class="map__contacts_block_info">+7 (390) 477 12 49</span>
+            </div>
+            <div class="map__contacts_block">
+              <h3 class="map__contacts_block_title">Адрес:</h3>
+              <span class="map__contacts_block_info">г. Красноярск, район Центр, </span>
+              <span class="map__contacts_block_info">ул. Тельмана, д. 35</span>
+            </div>
+            <div class="map__contacts_block">
+              <h3 class="map__contacts_block_title">E-mail:</h3>
+              <span class="map__contacts_block_info">finland24@mail.ru</span>
+              <span class="map__contacts_block_info">finland24@mail.ru</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -286,6 +334,8 @@
         slidesToShow: 2,
         slidesToScroll: 1,
         dots: true,
+        nextArrow: $('.arrow-right'),
+        prevArrow: $('.arrow-left'),
         autoplay: true,
         autoplaySpeed: 3000
 

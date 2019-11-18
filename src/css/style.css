@@ -530,6 +530,61 @@ input::placeholder {
   margin: 0 30px;
 }
 
+.arrow-left {
+  width: 17px;
+  height: 12px;
+  background-image: url(../images/img-reviews/arrow-left.png);
+  background-repeat: no-repeat;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  position: absolute;
+  margin-top: 39px;
+  margin-left: 500px;
+  cursor: pointer;
+}
+
+.arrow-left:hover {
+  background-image: url(../images/img-reviews/arrow-left-active.png);
+  background-repeat: no-repeat;
+}
+
+.arrow-right {
+  width: 17px;
+  height: 12px;
+  background-image: url(../images/img-reviews/arrow-right.png);
+  background-repeat: no-repeat;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  position: absolute;
+  margin-top: 39px;
+  margin-left: 676px;
+  cursor: pointer;
+}
+
+.arrow-right:hover {
+  background-image: url(../images/img-reviews/arrow-right-active.png);
+  background-repeat: no-repeat;
+}
+
+.contacts {
+  padding-top: 140px;
+  padding-bottom: 160px;
+}
+
+.contacts-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contacts__block {
+  width: 50%;
+}
+
+.map {
+  height: 480px;
+}
+
 .section-title {
   text-align: center;
   color: #485168;
