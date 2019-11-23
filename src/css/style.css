@@ -575,10 +575,112 @@ input::placeholder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .contacts__block {
   width: 50%;
+}
+
+.contacts__block-left {
+  margin-right: 55px;
+}
+
+.contacts__block_title {
+  margin-bottom: 55px;
+  text-align: left !important;
+}
+
+.contacts__block_subtitle {
+  width: 511px;
+  color: #99a3b7;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+  margin-bottom: 85px;
+}
+
+.contacts__form {
+  padding: 80px 75px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 6px 10px 13px rgba(18, 31, 54, 0.1);
+          box-shadow: 6px 10px 13px rgba(18, 31, 54, 0.1);
+}
+
+.contacts__form_input {
+  background-color: #f6f9ff;
+  margin-bottom: 15px;
+  width: 416px;
+  color: #575a5f;
+  padding: 25px 0 25px 40px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 6px 10px 13px rgba(18, 31, 54, 0.1);
+          box-shadow: 6px 10px 13px rgba(18, 31, 54, 0.1);
+}
+
+.contacts__form_input::-webkit-input-placeholder {
+  color: #99a3b7;
+}
+
+.contacts__form_input:-ms-input-placeholder {
+  color: #99a3b7;
+}
+
+.contacts__form_input::-ms-input-placeholder {
+  color: #99a3b7;
+}
+
+.contacts__form_input::placeholder {
+  color: #99a3b7;
+}
+
+.contacts__form_textarea {
+  width: 416px;
+  height: 170px;
+  background-color: #f6f9ff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 6px 10px 13px rgba(18, 31, 54, 0.1);
+          box-shadow: 6px 10px 13px rgba(18, 31, 54, 0.1);
+  color: #575a5f;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  padding-left: 40px;
+  padding-top: 25px;
+  margin-bottom: 40px;
+  outline: none;
+}
+
+.contacts__form_textarea::-webkit-input-placeholder {
+  color: #99a3b7;
+}
+
+.contacts__form_textarea:-ms-input-placeholder {
+  color: #99a3b7;
+}
+
+.contacts__form_textarea::-ms-input-placeholder {
+  color: #99a3b7;
+}
+
+.contacts__form_textarea::placeholder {
+  color: #99a3b7;
+}
+
+.contacts__form_button {
+  padding: 15px 163px;
+  -webkit-box-shadow: 6px 10px 13px rgba(18, 31, 54, 0.4);
+          box-shadow: 6px 10px 13px rgba(18, 31, 54, 0.4);
 }
 
 .map {
