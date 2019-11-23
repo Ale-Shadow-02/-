@@ -606,9 +606,9 @@ input::placeholder {
 
 .contacts__form {
   padding: 80px 75px;
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  -webkit-box-shadow: 6px 10px 13px rgba(18, 31, 54, 0.1);
-          box-shadow: 6px 10px 13px rgba(18, 31, 54, 0.1);
+  border: none;
+  -webkit-box-shadow: 0 10px 13px rgba(18, 31, 54, 0.1);
+          box-shadow: 0 10px 13px rgba(18, 31, 54, 0.1);
 }
 
 .contacts__form_input {
@@ -622,9 +622,9 @@ input::placeholder {
   font-weight: 700;
   line-height: 24px;
   outline: none;
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  -webkit-box-shadow: 6px 10px 13px rgba(18, 31, 54, 0.1);
-          box-shadow: 6px 10px 13px rgba(18, 31, 54, 0.1);
+  border: none;
+  -webkit-box-shadow: 0 10px 13px rgba(18, 31, 54, 0.1);
+          box-shadow: 0 10px 13px rgba(18, 31, 54, 0.1);
 }
 
 .contacts__form_input::-webkit-input-placeholder {
@@ -647,9 +647,9 @@ input::placeholder {
   width: 416px;
   height: 170px;
   background-color: #f6f9ff;
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  -webkit-box-shadow: 6px 10px 13px rgba(18, 31, 54, 0.1);
-          box-shadow: 6px 10px 13px rgba(18, 31, 54, 0.1);
+  border: none;
+  -webkit-box-shadow: 0 10px 13px rgba(18, 31, 54, 0.1);
+          box-shadow: 0 10px 13px rgba(18, 31, 54, 0.1);
   color: #575a5f;
   font-family: Roboto;
   font-size: 14px;
@@ -679,12 +679,56 @@ input::placeholder {
 
 .contacts__form_button {
   padding: 15px 163px;
-  -webkit-box-shadow: 6px 10px 13px rgba(18, 31, 54, 0.4);
-          box-shadow: 6px 10px 13px rgba(18, 31, 54, 0.4);
+  -webkit-box-shadow: 0 10px 13px rgba(18, 31, 54, 0.4);
+          box-shadow: 0 10px 13px rgba(18, 31, 54, 0.4);
 }
 
 .map {
   height: 480px;
+}
+
+.map__descr {
+  -webkit-box-shadow: 0 10px 13px rgba(18, 31, 54, 0.1);
+          box-shadow: 0 10px 13px rgba(18, 31, 54, 0.1);
+  background-color: #ffffff;
+  height: 63px;
+  color: #99a3b7;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 35px 50px;
+  margin-bottom: 70px;
+}
+
+.map__title {
+  text-align: left !important;
+  margin-bottom: 40px;
+}
+
+.map__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.map__contacts_block_title {
+  color: #3e7ef1;
+  font-family: Roboto;
+  font-weight: 700;
+  line-height: 22px;
+  margin-bottom: 25px;
+}
+
+.map__contacts_block_info {
+  color: #242424;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
 }
 
 .section-title {
