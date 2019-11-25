@@ -43,7 +43,7 @@
           <span class="contacts-nav_info">
             <a href="tel:8 (390) 254-63-25" class="contacts-nav_phone">8 (390) 254-63-25</a>
           </span>
-          <button class="button button-active">Заказать звонок</button>
+          <button class="button ">Заказать звонок</button>
         </div>
       </div>
     </div>
@@ -276,7 +276,8 @@
           <form action="#" class="form contacts__form">
             <input class="contacts__form_input" type="text" name="username" placeholder="Анастасия" required>
             <input class="contacts__form_input" type="tel" name="userphone" placeholder="8 (999) 123 45 58" required>
-            <textarea class="contacts__form_textarea" name="usertext" cols="30" rows="10" placeholder="Ваш вопрос..."></textarea>
+            <textarea class="contacts__form_textarea" name="usertext" cols="30" rows="10"
+              placeholder="Ваш вопрос..."></textarea>
             <button class="button contacts__form_button" type="submit">Отправить вопрос</button>
           </form>
         </div>
@@ -287,7 +288,8 @@
             </script>
           </div>
           <div class="map__descr">
-            <span class="map__descr_text">К нам очень легко добраться. Вы можете связаться с нами по укзанным контактам или
+            <span class="map__descr_text">К нам очень легко добраться. Вы можете связаться с нами по укзанным контактам
+              или
               же заполнить форму и наши сотрудники проконсультируют вас по всем вопросам</span>
           </div>
           <h2 class="section-title map__title">Контактная информация</h2>
@@ -315,7 +317,8 @@
   <footer class="footer">
     <div class="container">
       <h2 class="section-title footer__title">Запишитесь на прием прямо сейчас!</h2>
-      <span class="footer__subtitle">Отправьте заявку на прием в нашу стоматологическую клинику и наши сотрудники свяжутся с вами в ближайшее время</span>
+      <span class="footer__subtitle">Отправьте заявку на прием в нашу стоматологическую клинику и наши сотрудники
+        свяжутся с вами в ближайшее время</span>
       <form action="#" method="POST" class="form headers-form">
         <div class="headers-form_wrap">
           <div class="form__block">
@@ -381,11 +384,32 @@
       </div>
     </div>
   </footer>
-  
+  <div class="modal-window">
+    <div class="md-modal md-effect-19" id="modal-19">
+      <div class="md-content">
+        <form action="#" class="form contacts__form">
+          <input class="contacts__form_input" type="text" name="username" placeholder="Анастасия" required>
+          <input class="contacts__form_input" type="tel" name="userphone" placeholder="8 (999) 123 45 58" required>
+          <textarea class="contacts__form_textarea" name="usertext" cols="30" rows="10"
+            placeholder="Ваш вопрос..."></textarea>
+          <button class="button contacts__form_button" type="submit">Отправить вопрос</button>
+        </form>
+        <button class="md-close">Close me!</button>
+      </div>
+    </div>
+  </div>
+  <div class="md-overlay"></div>
+
 
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  
+  <!-- Срипты модального окна -->
+  
+ 
+  <!--  -->
+  
   <script src="js/slick.min.js"></script>
 
   <script>
