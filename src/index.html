@@ -43,7 +43,7 @@
           <span class="contacts-nav_info">
             <a href="tel:8 (390) 254-63-25" class="contacts-nav_phone">8 (390) 254-63-25</a>
           </span>
-          <button class="button ">Заказать звонок</button>
+          <button class="button popup-open ">Заказать звонок</button>
         </div>
       </div>
     </div>
@@ -384,33 +384,34 @@
       </div>
     </div>
   </footer>
-  <div class="modal-window">
-    <div class="md-modal md-effect-19" id="modal-19">
-      <div class="md-content">
-        <form action="#" class="form contacts__form">
-          <input class="contacts__form_input" type="text" name="username" placeholder="Анастасия" required>
-          <input class="contacts__form_input" type="tel" name="userphone" placeholder="8 (999) 123 45 58" required>
-          <textarea class="contacts__form_textarea" name="usertext" cols="30" rows="10"
-            placeholder="Ваш вопрос..."></textarea>
-          <button class="button contacts__form_button" type="submit">Отправить вопрос</button>
-        </form>
-        <button class="md-close">Close me!</button>
-      </div>
-    </div>
+  <div class="modal-window popup-fade">
+    <form action="#" class="form contacts__form popup">
+      <input class="contacts__form_input popup__input" type="text" name="username" placeholder="Анастасия" required>
+      <input class="contacts__form_input popup__input" type="tel" name="userphone" placeholder="8 (999) 123 45 58"
+        required>
+      <textarea class="contacts__form_textarea popup__textarea" name="usertext" cols="30" rows="10"
+        placeholder="Ваш вопрос..."></textarea>
+      <button class="button contacts__form_button popup__button" type="submit">Отправить вопрос</button>
+      <!-- <div class="popup__close"> -->
+        <!-- <a href="#" class="circle__close">&#10008;</a> -->
+        <!-- <button class="circle__close">&#10008;</button> -->
+        <button class="popup__close">&#10008;</button>
+      <!-- </div> -->
+    </form>
   </div>
-  <div class="md-overlay"></div>
 
 
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  
+
   <!-- Срипты модального окна -->
-  
- 
+
+
   <!--  -->
-  
+
   <script src="js/slick.min.js"></script>
+  <script src="js/modal.js"></script>
 
   <script>
     $(document).ready(function () {
