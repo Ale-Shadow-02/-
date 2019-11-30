@@ -8,7 +8,7 @@ $(document).ready(function () {
 
   link.click(function () {
     link.toggleClass('menu-link_active');
-    menu.toggleClass('menu-active')
+    menu.toggleClass('menu-active');
 
   });
   nav_link.click(function () {
