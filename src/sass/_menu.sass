@@ -1,0 +1,98 @@
+.menu
+  &-link
+    display: none
+    width: 50px
+    height: 50px
+    background-color: #ffffff
+    border-radius: 50%
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4)
+    position: fixed
+    top: 50px
+    left: 50px
+    z-index: 9
+    span
+      display: block
+      width: 30px
+      height: 3px
+      background-color: #333333
+      position: absolute
+      left: 50%
+      top: 50%
+      margin-left: -15px
+      margin-top: -1px
+      &:before
+        content: ""
+        display: block
+        width: 30px
+        height: 3px
+        background-color: #333333
+        position: absolute
+        left: 50%
+        top: 50%
+        margin-top: -11px
+        margin-left: -15px
+        transition: 0.3s
+      &:after
+        content: ""
+        display: block
+        width: 30px
+        height: 3px
+        background-color: #333333
+        position: absolute
+        left: 50%
+        top: 50%
+        margin-top: 7px
+        margin-left: -15px
+        transition: 0.3s
+    &_active
+      span
+        background-color: transparent
+        &:before
+          transform: rotate(135deg)
+          margin-top: 0
+        &:after
+          transform: rotate(-135deg)
+          margin-top: 0
+
+.menu
+  color: #485168
+  font-family: Roboto
+  font-size: 20px
+  font-weight: 700
+  background: #2acfd0
+  position: fixed
+  z-index: 1
+  padding: 0
+  width: 50vw
+  height: 100vh
+  display: flex
+  justify-content: center
+  align-items: center
+  transition: all 0.8s
+  left: -100vw
+  &-active
+    left: 0
+  ul
+    padding: 0
+    text-align: center
+    li 
+      width: 100vw
+    a 
+      color: #ffffff
+      text-decoration:  none
+      line-height: 4
+      letter-spacing: 5px
+      transition: all 0.3s
+      display: block
+      width: 100vw
+      &:hover
+        background-color: rgba(255, 255, 255, 0.3)
+      
+
+
+
+
+
+
+
+

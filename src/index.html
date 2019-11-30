@@ -18,6 +18,15 @@
 
 <body>
   <header class="header">
+    <a href="#" class="menu-link"><span></span></a>
+    <div class="menu">
+      <ul>
+        <li><a href="#headers">О компании</a></li>
+        <li><a href="#servises">Услуги</a></li>
+        <li><a href="#about">Цены</a></li>
+        <li><a href="#contacts">Контакты</a></li>
+      </ul>
+    </div>
     <div class="container">
       <div class="wrap">
         <div class="logo">
@@ -26,16 +35,16 @@
         <nav class="navbar">
           <ul class="navbar_list">
             <li class="navbar_list__item">
-              <a href="#" class="navbar_list__link">О компании</a>
+              <a href="#headers" class="navbar_list__link">О компании</a>
             </li>
             <li class="navbar_list__item">
-              <a href="#" class="navbar_list__link">Услуги</a>
+              <a href="#servises" class="navbar_list__link">Услуги</a>
             </li>
             <li class="navbar_list__item">
-              <a href="#" class="navbar_list__link">Цены</a>
+              <a href="#about" class="navbar_list__link">Цены</a>
             </li>
             <li class="navbar_list__item">
-              <a href="#" class="navbar_list__link">Контакты</a>
+              <a href="#contacts" class="navbar_list__link">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -48,7 +57,7 @@
       </div>
     </div>
   </header>
-  <section class="section headers">
+  <section class="section headers" id="headers">
     <div class="container">
       <div class="headers_wrap">
         <div class="headers_block">
@@ -94,7 +103,7 @@
       </form>
     </div>
   </section>
-  <section class="section servises">
+  <section class="section servises" id="servises">
     <div class="container">
       <h2 class="section-title servises__title">Наши услуги</h2>
       <span class="servises__subtitle">Репутация важнее денег. Над ней не властны ни инфляции, ни кризисы.</span>
@@ -142,7 +151,7 @@
       <button class="servises__btn">Все услуги</button>
     </div>
   </section>
-  <section class="section about">
+  <section class="section about" id="about">
     <div class="container">
       <h2 class="section-title about-title">Почему мы?</h2>
       <div class="about-block">
@@ -265,7 +274,7 @@
       </div>
     </div>
   </section>
-  <section class="section contacts">
+  <section class="section contacts" id="contacts">
     <div class="container">
       <div class="contacts-wrap">
         <div class="contacts__block contacts__block-left">
@@ -393,9 +402,9 @@
         placeholder="Ваш вопрос..."></textarea>
       <button class="button contacts__form_button popup__button" type="submit">Отправить вопрос</button>
       <!-- <div class="popup__close"> -->
-        <!-- <a href="#" class="circle__close">&#10008;</a> -->
-        <!-- <button class="circle__close">&#10008;</button> -->
-        <button class="popup__close">&#10008;</button>
+      <!-- <a href="#" class="circle__close">&#10008;</a> -->
+      <!-- <button class="circle__close">&#10008;</button> -->
+      <button class="popup__close">&#10008;</button>
       <!-- </div> -->
     </form>
   </div>
@@ -405,13 +414,9 @@
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
-  <!-- Срипты модального окна -->
-
-
-  <!--  -->
-
   <script src="js/slick.min.js"></script>
   <script src="js/modal.js"></script>
+  <script src="js/menu.js"></script>
 
   <script>
     $(document).ready(function () {
@@ -436,6 +441,7 @@
 
       });
     });
+    
   </script>
 </body>
 
