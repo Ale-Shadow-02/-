@@ -93,7 +93,7 @@
             <div class="form__block_img">
               <img src="images/img-headers/form-img-2.png" alt="tel_img">
             </div>
-            <input type="tel" class="form__input" name="user_phone" id="user_phone" placeholder="8 (999) 123 45 58"
+            <input type="tel" class="form__input imaskjs__input_tel" name="user_phone" id="user_phone" placeholder="8 (999) 123 45 58"
               required>
           </div>
           <div class="form__block">
@@ -284,7 +284,8 @@
             и ответят на все интересующие вас вопросы</span>
           <form action="#" class="form contacts__form">
             <input class="contacts__form_input" type="text" name="username" placeholder="Анастасия" required>
-            <input class="contacts__form_input" type="tel" name="userphone" placeholder="8 (999) 123 45 58" required>
+            <input class="contacts__form_input imaskjs__input_tel" type="tel" name="userphone"
+              placeholder="8 (999) 123 45 58" required>
             <textarea class="contacts__form_textarea" name="usertext" cols="30" rows="10"
               placeholder="Ваш вопрос..."></textarea>
             <button class="button contacts__form_button" type="submit">Отправить вопрос</button>
@@ -339,7 +340,7 @@
             <div class="form__block_img">
               <img src="images/img-headers/form-img-2.png" alt="tel_img">
             </div>
-            <input type="tel" class="form__input" name="user_phone" id="userphone" placeholder="8 (999) 123 45 58"
+            <input type="tel" class="form__input imaskjs__input_tel" name="user_phone" id="userphone" placeholder="8 (999) 123 45 58"
               required>
           </div>
           <div class="form__block">
@@ -395,16 +396,12 @@
   <div class="modal-window popup-fade">
     <form action="#" class="form contacts__form popup">
       <input class="contacts__form_input popup__input" type="text" name="username" placeholder="Анастасия" required>
-      <input class="contacts__form_input popup__input" type="tel" name="userphone" placeholder="8 (999) 123 45 58"
+      <input class="contacts__form_input popup__input imaskjs__input_tel" type="tel" name="userphone" placeholder="8 (999) 123 45 58"
         required>
       <textarea class="contacts__form_textarea popup__textarea" name="usertext" cols="30" rows="10"
         placeholder="Ваш вопрос..."></textarea>
       <button class="button contacts__form_button popup__button" type="submit">Отправить вопрос</button>
-      <!-- <div class="popup__close"> -->
-      <!-- <a href="#" class="circle__close">&#10008;</a> -->
-      <!-- <button class="circle__close">&#10008;</button> -->
       <button class="popup__close">&#10008;</button>
-      <!-- </div> -->
     </form>
   </div>
 
@@ -416,6 +413,7 @@
   <script src="js/slick.min.js"></script>
   <script src="js/modal.js"></script>
   <script src="js/menu.js"></script>
+  <script src="https://unpkg.com/imask"></script>
 
   <script>
     $(document).ready(function () {
@@ -440,7 +438,14 @@
 
       });
     });
-    
+  </script>
+  <script>
+    var elements = document.getElementsByClassName('imaskjs__input_tel');
+    for (var i = 0; i < elements.length; i++) {
+      new IMask(elements[i], {
+        mask: '+{7}(000)000-00-00',
+      });
+    }
   </script>
 </body>
 
