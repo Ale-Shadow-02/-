@@ -81,20 +81,20 @@
       <div class="headers_block__img2">
         <figure><img class="headers_img2" src="images/img-headers/img_block_2.png" alt="img"></figure>
       </div>
-      <form action="#" method="POST" class="form headers-form">
+      <form action="#" method="POST" class="form headers-form" id="headers-form">
         <div class="headers-form_wrap">
           <div class="form__block">
             <div class="form__block_img">
               <img src="images/img-headers/form-img-1.png" alt="user_img">
             </div>
-            <input type="text" class="form__input" name="user_name" id="user_name" placeholder="Мария|" required>
+            <input type="text" class="form__input" name="user_name" id="user_name" placeholder="Мария|">
           </div>
           <div class="form__block">
             <div class="form__block_img">
               <img src="images/img-headers/form-img-2.png" alt="tel_img">
             </div>
-            <input type="tel" class="form__input imaskjs__input_tel" name="user_phone" id="user_phone" placeholder="8 (999) 123 45 58"
-              required>
+            <input type="tel" class="form__input imaskjs__input_tel" name="user_phone" id="user_phone"
+              placeholder="8 (999) 123 45 58">
           </div>
           <div class="form__block">
             <button class="form-btn" name="submit" type="submit">Записаться на прием</button>
@@ -282,13 +282,13 @@
           <span class="contacts__block_subtitle">Заполните форму и наши сотрудники свяжутфся с вами в ближайшее
             время
             и ответят на все интересующие вас вопросы</span>
-          <form action="#" class="form contacts__form">
-            <input class="contacts__form_input" type="text" name="username" placeholder="Анастасия" required>
-            <input class="contacts__form_input imaskjs__input_tel" type="tel" name="userphone"
-              placeholder="8 (999) 123 45 58" required>
-            <textarea class="contacts__form_textarea" name="usertext" cols="30" rows="10"
+          <form action="#" method="POST" class="form contacts__form" id="contacts-form">
+            <input class="contacts__form_input" type="text" name="user_name" placeholder="Анастасия" >
+            <input class="contacts__form_input imaskjs__input_tel" type="tel" name="user_phone"
+              placeholder="8 (999) 123 45 58" >
+            <textarea class="contacts__form_textarea" name="user_text" cols="30" rows="10"
               placeholder="Ваш вопрос..."></textarea>
-            <button class="button contacts__form_button" type="submit">Отправить вопрос</button>
+            <button class="button contacts__form_button" name="submit" type="submit">Отправить вопрос</button>
           </form>
         </div>
         <div class="contacts__block">
@@ -328,20 +328,20 @@
       <h2 class="section-title footer__title">Запишитесь на прием прямо сейчас!</h2>
       <span class="footer__subtitle">Отправьте заявку на прием в нашу стоматологическую клинику и наши сотрудники
         свяжутся с вами в ближайшее время</span>
-      <form action="#" method="POST" class="form headers-form">
+      <form action="#" method="POST" class="form headers-form" id="footer-form">
         <div class="headers-form_wrap">
           <div class="form__block">
             <div class="form__block_img">
               <img src="images/img-headers/form-img-1.png" alt="user_img">
             </div>
-            <input type="text" class="form__input" name="user_name" id="username" placeholder="Мария|" required>
+            <input type="text" class="form__input" name="user_name" id="username" placeholder="Мария|" >
           </div>
           <div class="form__block">
             <div class="form__block_img">
               <img src="images/img-headers/form-img-2.png" alt="tel_img">
             </div>
-            <input type="tel" class="form__input imaskjs__input_tel" name="user_phone" id="userphone" placeholder="8 (999) 123 45 58"
-              required>
+            <input type="tel" class="form__input imaskjs__input_tel" name="user_phone" id="user_phone" placeholder="8 (999) 123 45 58"
+              >
           </div>
           <div class="form__block">
             <button class="form-btn" name="submit" type="submit">Записаться на прием</button>
@@ -394,13 +394,12 @@
     </div>
   </footer>
   <div class="modal-window popup-fade">
-    <form action="#" class="form contacts__form popup">
-      <input class="contacts__form_input popup__input" type="text" name="username" placeholder="Анастасия" required>
-      <input class="contacts__form_input popup__input imaskjs__input_tel" type="tel" name="userphone" placeholder="8 (999) 123 45 58"
-        required>
+    <form action="#" method="POST" class="form contacts__form popup" id="modal-form">
+      <input class="contacts__form_input popup__input" type="text" name="user_name" placeholder="Анастасия" >
+      <input class="contacts__form_input popup__input imaskjs__input_tel" type="tel" name="user_phone" placeholder="8 (999) 123 45 58">
       <textarea class="contacts__form_textarea popup__textarea" name="usertext" cols="30" rows="10"
         placeholder="Ваш вопрос..."></textarea>
-      <button class="button contacts__form_button popup__button" type="submit">Отправить вопрос</button>
+      <button class="button contacts__form_button popup__button" name="submit" type="submit">Отправить вопрос</button>
       <button class="popup__close">&#10008;</button>
     </form>
   </div>
@@ -413,6 +412,8 @@
   <script src="js/slick.min.js"></script>
   <script src="js/modal.js"></script>
   <script src="js/menu.js"></script>
+  <script src="js/validate.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
   <script src="https://unpkg.com/imask"></script>
 
   <script>
@@ -422,7 +423,7 @@
         slidesToScroll: 1,
         nextArrow: $('.slide__item_circle'),
         prevArrow: false,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 3000
 
       });
@@ -433,7 +434,7 @@
         dots: true,
         nextArrow: $('.arrow-right'),
         prevArrow: $('.arrow-left'),
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 3000
 
       });
