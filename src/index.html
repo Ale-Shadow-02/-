@@ -81,7 +81,7 @@
       <div class="headers_block__img2">
         <figure><img class="headers_img2" src="images/img-headers/img_block_2.png" alt="img"></figure>
       </div>
-      <form action="mailer/smart.php" method="POST" class="form headers-form" id="headers-form">
+      <form action="mail.php" method="POST" class="form headers-form" id="headers-form">
         <div class="headers-form_wrap">
           <div class="form__block">
             <div class="form__block_img">
@@ -97,7 +97,7 @@
               placeholder="8 (999) 123 45 58">
           </div>
           <div class="form__block">
-            <button class="form-btn" name="submit" type="submit">Записаться на прием</button>
+            <button class="form-btn" type="submit">Записаться на прием</button>
           </div>
         </div>
       </form>
@@ -282,7 +282,7 @@
           <span class="contacts__block_subtitle">Заполните форму и наши сотрудники свяжутфся с вами в ближайшее
             время
             и ответят на все интересующие вас вопросы</span>
-          <form action="mailer/smart.php" method="POST" class="form contacts__form" id="contacts-form">
+          <form action="mail.php" method="POST" class="form contacts__form" id="contacts-form">
             <input class="contacts__form_input" type="text" name="user_name" placeholder="Анастасия" >
             <input class="contacts__form_input imaskjs__input_tel" type="tel" name="user_phone"
               placeholder="8 (999) 123 45 58" >
@@ -328,7 +328,7 @@
       <h2 class="section-title footer__title">Запишитесь на прием прямо сейчас!</h2>
       <span class="footer__subtitle">Отправьте заявку на прием в нашу стоматологическую клинику и наши сотрудники
         свяжутся с вами в ближайшее время</span>
-      <form action="mailer/smart.php" method="POST" class="form headers-form" id="footer-form">
+      <form action="mail.php" method="POST" class="form headers-form" id="footer-form">
         <div class="headers-form_wrap">
           <div class="form__block">
             <div class="form__block_img">
@@ -394,10 +394,10 @@
     </div>
   </footer>
   <div class="modal-window popup-fade">
-    <form action="mailer/smart.php" method="POST" class="form contacts__form popup" id="modal-form">
+    <form action="mail.php" method="POST" class="form contacts__form popup" id="modal-form">
       <input class="contacts__form_input popup__input" type="text" name="user_name" placeholder="Анастасия" >
       <input class="contacts__form_input popup__input imaskjs__input_tel" type="tel" name="user_phone" placeholder="8 (999) 123 45 58">
-      <textarea class="contacts__form_textarea popup__textarea" name="usertext" cols="30" rows="10"
+      <textarea class="contacts__form_textarea popup__textarea" name="user_text" cols="30" rows="10"
         placeholder="Ваш вопрос..."></textarea>
       <button class="button contacts__form_button popup__button" name="submit" type="submit">Отправить вопрос</button>
       <button class="popup__close">&#10008;</button>
