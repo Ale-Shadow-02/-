@@ -108,3 +108,40 @@ input
   &::placeholder
     color: #ffffff
 
+
+@media(max-width: 1800px)
+  .headers
+    &_block
+      &__img2
+        display: none
+@media(max-width: 992px)
+  .headers
+    background: url(../images/img-headers/img_block_1.png)
+    background-size: cover
+    &_block 
+      &__img1
+        display: none
+      &__description
+        color: #363940
+      &__subtitle
+        color: #363940
+        &__order
+          color: #1d58c1
+  
+@media(max-width: 768px)
+  .headers
+    background: none
+    &_block
+      width: 100%
+      text-align: center
+      &__description
+        color: #99a3b7
+        width: 70%
+        margin: 0 auto
+      &__subtitle
+        color: #99a3b7
+        &__order
+          color: #3e7ef1
+
+
+

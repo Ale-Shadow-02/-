@@ -31,7 +31,7 @@
     <div class="container">
       <div class="wrap">
         <div class="logo">
-          <img src="images/img-header/logo.png" alt="" class="logo_img">
+          <img src="images/img-header/logo.png" alt="logo" class="logo_img">
         </div>
         <nav class="navbar">
           <ul class="navbar_list">
@@ -284,9 +284,9 @@
             время
             и ответят на все интересующие вас вопросы</span>
           <form action="mail.php" method="POST" class="form contacts__form" id="contacts-form">
-            <input class="contacts__form_input" type="text" name="user_name" placeholder="Анастасия" >
+            <input class="contacts__form_input" type="text" name="user_name" placeholder="Анастасия">
             <input class="contacts__form_input imaskjs__input_tel" type="tel" name="user_phone"
-              placeholder="8 (999) 123 45 58" >
+              placeholder="8 (999) 123 45 58">
             <textarea class="contacts__form_textarea" name="user_text" cols="30" rows="10"
               placeholder="Ваш вопрос..."></textarea>
             <button class="button contacts__form_button" name="submit" type="submit">Отправить вопрос</button>
@@ -294,7 +294,8 @@
         </div>
         <div class="contacts__block">
           <div class="map">
-            <script  async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac3e5ff2ee6efdbe027e4bce79832812817acf5e8e626d941c8eb0f40c52b88b9&amp;width=100%25&amp;height=480&amp;lang=ru_RU&amp;scroll=false">
+            <script async
+              src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac3e5ff2ee6efdbe027e4bce79832812817acf5e8e626d941c8eb0f40c52b88b9&amp;width=100%25&amp;height=480&amp;lang=ru_RU&amp;scroll=false">
             </script>
           </div>
           <div class="map__descr">
@@ -335,14 +336,14 @@
             <div class="form__block_img">
               <img src="images/img-headers/form-img-1.png" alt="user_img">
             </div>
-            <input type="text" class="form__input" name="user_name" id="username" placeholder="Мария|" >
+            <input type="text" class="form__input" name="user_name" id="username" placeholder="Мария|">
           </div>
           <div class="form__block">
             <div class="form__block_img">
               <img src="images/img-headers/form-img-2.png" alt="tel_img">
             </div>
-            <input type="tel" class="form__input imaskjs__input_tel" name="user_phone" id="user_phone" placeholder="8 (999) 123 45 58"
-              >
+            <input type="tel" class="form__input imaskjs__input_tel" name="user_phone" id="user_phone"
+              placeholder="8 (999) 123 45 58">
           </div>
           <div class="form__block">
             <button class="form-btn" name="submit" type="submit">Записаться на прием</button>
@@ -396,8 +397,9 @@
   </footer>
   <div class="modal-window popup-fade">
     <form action="mail.php" method="POST" class="form contacts__form popup" id="modal-form">
-      <input class="contacts__form_input popup__input" type="text" name="user_name" placeholder="Анастасия" >
-      <input class="contacts__form_input popup__input imaskjs__input_tel" type="tel" name="user_phone" placeholder="8 (999) 123 45 58">
+      <input class="contacts__form_input popup__input" type="text" name="user_name" placeholder="Анастасия">
+      <input class="contacts__form_input popup__input imaskjs__input_tel" type="tel" name="user_phone"
+        placeholder="8 (999) 123 45 58">
       <textarea class="contacts__form_textarea popup__textarea" name="user_text" cols="30" rows="10"
         placeholder="Ваш вопрос..."></textarea>
       <button class="button contacts__form_button popup__button" name="submit" type="submit">Отправить вопрос</button>
@@ -429,8 +431,26 @@
         nextArrow: $('.slide__item_circle'),
         prevArrow: false,
         autoplay: false,
-        autoplaySpeed: 3000
+        autoplaySpeed: 3000,
 
+        responsive: [
+          {
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              nextArrow: $('.slide__item_circle'),
+            }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              nextArrow: $('.slide__item_circle'),
+            }
+          },
+        ]
       });
 
       $('.slider-reviews').slick({
@@ -440,7 +460,18 @@
         nextArrow: $('.arrow-right'),
         prevArrow: $('.arrow-left'),
         autoplay: false,
-        autoplaySpeed: 3000
+        autoplaySpeed: 3000,
+        responsive: [
+        {
+        breakpoint: 1200,
+        settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        nextArrow: $('.arrow-right'),
+        prevArrow: $('.arrow-left'),
+        }
+        },
+      ]
 
       });
     });

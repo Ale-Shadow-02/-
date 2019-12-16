@@ -12,6 +12,14 @@ body {
   color: red;
 }
 
+@media (max-width: 1200px) {
+  .container {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
 .wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -118,6 +126,19 @@ body {
           transform: scale(1.05);
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+@media (max-width: 992px) {
+  .navbar {
+    display: none;
+  }
+  .logo {
+    width: 28%;
+    margin-left: 11%;
+  }
+  .logo_img {
+    max-width: 100%;
+  }
 }
 
 .headers {
@@ -286,6 +307,52 @@ input::-ms-input-placeholder {
 
 input::placeholder {
   color: #ffffff;
+}
+
+@media (max-width: 1800px) {
+  .headers_block__img2 {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .headers {
+    background: url(../images/img-headers/img_block_1.png);
+    background-size: cover;
+  }
+  .headers_block__img1 {
+    display: none;
+  }
+  .headers_block__description {
+    color: #363940;
+  }
+  .headers_block__subtitle {
+    color: #363940;
+  }
+  .headers_block__subtitle__order {
+    color: #1d58c1;
+  }
+}
+
+@media (max-width: 768px) {
+  .headers {
+    background: none;
+  }
+  .headers_block {
+    width: 100%;
+    text-align: center;
+  }
+  .headers_block__description {
+    color: #99a3b7;
+    width: 70%;
+    margin: 0 auto;
+  }
+  .headers_block__subtitle {
+    color: #99a3b7;
+  }
+  .headers_block__subtitle__order {
+    color: #3e7ef1;
+  }
 }
 
 .servises {
@@ -727,6 +794,21 @@ input::placeholder {
   line-height: 28px;
 }
 
+@media (max-width: 1200px) {
+  .contacts-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .contacts__block {
+    width: 100%;
+  }
+  .contacts__block-left {
+    margin-top: 50px;
+  }
+}
+
 .footer {
   background-image: url(../images/img-footer/footer-bg.jpg);
   background-size: cover;
@@ -914,8 +996,8 @@ input::placeholder {
   -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
           box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
   position: fixed;
-  top: 50px;
-  left: 50px;
+  top: 25px;
+  left: 15px;
   z-index: 9;
 }
 
@@ -1012,7 +1094,7 @@ input::placeholder {
 }
 
 .menu ul li {
-  width: 100vw;
+  width: 50vw;
 }
 
 .menu ul a {
@@ -1023,11 +1105,16 @@ input::placeholder {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   display: block;
-  width: 100vw;
 }
 
 .menu ul a:hover {
   background-color: rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 992px) {
+  .menu-link {
+    display: block;
+  }
 }
 
 .section-title {
