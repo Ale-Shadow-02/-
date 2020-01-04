@@ -683,6 +683,7 @@ input::placeholder {
 @media (max-width: 992px) {
   .about {
     padding-top: 50px;
+    padding-bottom: 100px;
   }
   .about-block {
     -webkit-box-orient: vertical;
@@ -702,6 +703,7 @@ input::placeholder {
 @media (max-width: 576px) {
   .about {
     padding-top: 25px;
+    padding-bottom: 50px;
   }
   .block__item {
     width: 90%;
@@ -816,6 +818,48 @@ input::placeholder {
 .arrow-right:hover {
   background-image: url(../images/img-reviews/arrow-right-active.png);
   background-repeat: no-repeat;
+}
+
+@media (max-width: 1199px) {
+  .arrow-left {
+    margin-left: 40%;
+  }
+  .arrow-right {
+    margin-left: 56%;
+  }
+}
+
+@media (max-width: 992px) {
+  .arrow-left {
+    margin-left: 37%;
+  }
+  .arrow-right {
+    margin-left: 58%;
+  }
+}
+
+@media (max-width: 768px) {
+  .arrow-left {
+    margin-left: 34%;
+  }
+  .arrow-right {
+    margin-left: 60%;
+  }
+}
+
+@media (max-width: 576px) {
+  .reviews {
+    padding-top: 70px;
+  }
+  .arrow-left {
+    margin-left: 21%;
+  }
+  .arrow-right {
+    margin-left: 59%;
+  }
+  .slide-block__img {
+    display: none;
+  }
 }
 
 .contacts {
