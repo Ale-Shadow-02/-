@@ -877,7 +877,7 @@ input::placeholder {
 }
 
 .contacts__block {
-  width: 50%;
+  width: 46%;
 }
 
 .contacts__block-left {
@@ -901,7 +901,7 @@ input::placeholder {
 }
 
 .contacts__form {
-  padding: 80px 75px;
+  padding: 80px 50px;
   border: none;
   -webkit-box-shadow: 0 10px 13px rgba(18, 31, 54, 0.1);
           box-shadow: 0 10px 13px rgba(18, 31, 54, 0.1);
@@ -1028,6 +1028,9 @@ input::placeholder {
 }
 
 @media (max-width: 1200px) {
+  .contacts {
+    padding-top: 0;
+  }
   .contacts-wrap {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -1038,7 +1041,97 @@ input::placeholder {
     width: 100%;
   }
   .contacts__block-left {
-    margin-top: 50px;
+    width: 50%;
+    margin: 70px auto 0 auto;
+  }
+  .contacts__block_title {
+    text-align: center !important;
+  }
+  .contacts__block_subtitle {
+    width: 100%;
+    text-align: center;
+  }
+  .contacts__form_input {
+    width: 90%;
+  }
+  .contacts__form_textarea {
+    width: 90%;
+  }
+  .contacts__form_button {
+    width: 100%;
+    padding: 15px 0;
+  }
+  .map__title {
+    text-align: center !important;
+  }
+  .map__contacts {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media (max-width: 992px) {
+  .contacts__block-left {
+    width: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts__block-left {
+    width: 80%;
+  }
+}
+
+@media (max-width: 576px) {
+  .contacts__block-left {
+    width: 100%;
+    margin-top: 40px;
+  }
+  .contacts__block_title {
+    font-size: 23px !important;
+  }
+  .contacts__block_subtitle {
+    margin-bottom: 20px;
+  }
+  .contacts__form {
+    padding: 30px 15px;
+  }
+  .contacts__form_input {
+    padding: 20px 0 20px 25px;
+    font-weight: 400;
+    line-height: 0;
+  }
+  .contacts__form_textarea {
+    padding-left: 25px;
+    font-weight: 400;
+    line-height: 0;
+  }
+  .contacts__form_button {
+    padding: 25px 0;
+  }
+  .map__title {
+    font-size: 23px !important;
+  }
+  .map__descr {
+    height: auto;
+    padding: 20px 10px;
+    font-weight: 400;
+  }
+  .map__contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .map__contacts_block {
+    width: 50%;
+    margin-bottom: 15px;
+  }
+  .map__contacts_block_title {
+    margin-bottom: 5px;
   }
 }
 
