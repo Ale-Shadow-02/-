@@ -445,6 +445,21 @@ input::placeholder {
   }
 }
 
+@media (max-width: 576px) {
+  .headers_block {
+    padding-top: 25px;
+  }
+  .headers__description {
+    line-height: 20px;
+  }
+  .headers__subtitle {
+    line-height: 20px;
+  }
+  .headers__subtitle__order {
+    margin-bottom: 30px;
+  }
+}
+
 .servises {
   position: relative;
   padding-top: 200px;
