@@ -1,4 +1,5 @@
 .servises
+  position: relative
   padding-top: 200px
   &__title
     margin-bottom: 30px
@@ -74,6 +75,21 @@
   &-slide
     outline: none
 
+@media(max-width: 1199px)
+  .slide
+    &__item
+      &_wrap
+        margin: 0 auto
+      &_circle
+        transform: translateY(-24px)
+        margin-left: 22%
+
+@media(max-width: 767px)
+  .slide
+    &__item
+      &_circle
+        margin-left: 46%
+
 @media(max-width: 576px)
   .servises
     &__btn
@@ -83,6 +99,9 @@
         cursor: default
         transform: none
         transition: none
+  
+
+  
 
  
 

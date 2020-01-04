@@ -128,29 +128,35 @@ input
         color: #363940
         &__order
           color: #1d58c1
+    &-form
+      margin-left: 10px
   
+// @media(max-width: 768px)
+//   .headers
+//     background: none
+//     &_block
+//       width: 100%
+//       padding-top: 50px
+//       text-align: center
+//       &__description
+//         color: #99a3b7
+//         width: 70%
+//         margin: 0 auto
+//       &__subtitle
+//         color: #99a3b7
+//         &__order
+//           color: #3e7ef1
+//           margin-bottom: 50px
+//     &-form
+//       &_wrap
+//         flex-direction: column
+//         flex-wrap: nowrap
+// @media(max-width: 704px)
+//   .form
+//     &__block
+//       &_last
+//         margin: 30px auto 0 auto
 @media(max-width: 768px)
-  .headers
-    background: none
-    &_block
-      width: 100%
-      padding-top: 50px
-      text-align: center
-      &__description
-        color: #99a3b7
-        width: 70%
-        margin: 0 auto
-      &__subtitle
-        color: #99a3b7
-        &__order
-          color: #3e7ef1
-          margin-bottom: 50px
-@media(max-width: 690px)
-  .form
-    &__block
-      &_last
-        margin: 30px auto 0 auto
-@media(max-width: 576px)
   .form
     &-btn
       &:hover
@@ -161,21 +167,32 @@ input
         transform: none
         transition: none
   .headers
+    background: none
     &_block
-      padding-top: 25px
+      width: 100%
+      padding-top: 50px
+      text-align: center
+      //padding-top: 25px
       &__title
         font-size: 30px
         line-height: 35px
         margin-bottom: 30px
       &__description
-        line-height: 20px
+        color: #99a3b7
+        width: 70%
+        margin: 0 auto
+        //line-height: 20px
       &__subtitle
-        line-height: 20px
+        color: #99a3b7
+        //line-height: 20px
         &__order
-          margin-bottom: 30px
+          color: #3e7ef1
+          margin-bottom: 50px
+          //margin-bottom: 30px
     &-form
       &_wrap
         flex-direction: column
+        flex-wrap: nowrap
   .form
     &__block
       margin-bottom: 30px
