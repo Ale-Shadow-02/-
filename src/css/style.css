@@ -1272,12 +1272,16 @@ input::placeholder {
     padding-top: 50px;
   }
   .footer__block__item {
-    width: 90%;
-    text-align: center;
+    width: 34%;
+    text-align: left;
     margin-bottom: 20px;
+  }
+  .footer__block__item_logo {
+    width: 70%;
   }
   .footer__block__item_link {
     margin-bottom: 5px;
+    width: 170px;
   }
   .footer__contacts-block {
     -webkit-box-orient: vertical;
