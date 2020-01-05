@@ -83,15 +83,46 @@
 
 @media(max-width: 768px)
   .footer
+    padding-top: 70px
+    &__title
+      line-height: 40px!important
     &__block
       &__item
         width: 34%
 
 @media(max-width: 576px)
   .footer
+    padding-top: 50px
     &__block
       &__item
         width: 90%
+        text-align: center
+        margin-bottom: 20px
+        &_link
+          margin-bottom: 5px
+    &__contacts
+      &-block
+        flex-direction: column
+        align-items: center
+        flex-wrap: none
+        margin-top: 50px
+        margin-left: 0
+    &__copyright
+      flex-direction: column
+      align-items: center
+  .copyright
+    text-align: center
+  .block
+    &__item
+      &_logo
+        background-repeat: no-repeat
+        background-position: center
+        width: 100%
+        height: 45px
+        margin-bottom: 10px
+      &_descr
+        margin: 0 auto
+      
 
 
 
